@@ -1,0 +1,27 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+}
+
+plugins {
+    id "java"
+    id "idea"
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    testCompile 'junit:junit:5.+'
+}
+
+// for IDEA
+sourceSets {
+    test {
+        java {
+            srcDir 'test/java'
+        }
+    }
+}
