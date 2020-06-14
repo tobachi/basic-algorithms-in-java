@@ -27,7 +27,6 @@ public class MapReduce {
 
     private static List<Mapped> map(String[] input) {
         List<Mapped> mapped = new ArrayList<>();
-        // TODO splitしたlistでforループさせる
         for (int i = 0; i < input.length; i++) {
             String sentence = input[i];
             String[] words = sentence.split(" ", 0);
